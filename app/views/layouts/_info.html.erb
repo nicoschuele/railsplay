@@ -1,0 +1,6 @@
+<ul>
+  <li>User Agent: <%= request.env['HTTP_USER_AGENT'] %></li>
+  <li>Local Date &amp; Time: <%= Time.now %></li>
+  <li>Browser language: <%= request.env['HTTP_ACCEPT_LANGUAGE'] %></li>
+  <li>Client IP: <%= request.remote_ip %></li>
+</ul>

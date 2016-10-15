@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  slogan: MyString
+  mission_statement: MyString
+  street: MyString
+  zip_code: MyString
+  city: MyString
+  country: MyString
+  revenue: 9.99
+
+two:
+  name: MyString
+  slogan: MyString
+  mission_statement: MyString
+  street: MyString
+  zip_code: MyString
+  city: MyString
+  country: MyString
+  revenue: 9.99

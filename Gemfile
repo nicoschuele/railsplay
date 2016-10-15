@@ -49,3 +49,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add models & routes annotations
 gem 'annotate'
+
+# Faker for seed data: https://github.com/stympy/faker
+gem 'faker'

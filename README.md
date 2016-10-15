@@ -4,7 +4,7 @@
 
 ## Description
 
-RailsPlay is a simple Rails app containing a few models, views and seed data. The goal of RailsPlay is to provide an app with the most basic features in order to quickly test a gem or a piece of code in the context of a fully functional app.
+RailsPlay is a simple Rails app (*5.0.0.1*) containing a few models, views and seed data. The goal of RailsPlay is to provide an app with the most basic features in order to quickly test a gem or a piece of code in the context of a fully functional app.
 
 ## Install
 

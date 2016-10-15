@@ -10,6 +10,11 @@
 <h3>&gt; Single model</h3>
 
 <h4>Company</h4>
+<p>
+  <small>
+    Currently <%= pluralize(@companies_count, 'record') %> in the database.
+  </small>
+</p>
 <ul>
   <li>name: <em>string</em></li>
   <li>slogan: <em>string</em></li>
@@ -25,6 +30,11 @@
 
 <h3>&gt; Two models with a one-to-many relationship</h3>
 <h4>Category</h4>
+<p>
+  <small>
+    Currently <%= pluralize(@categories_count, 'record') %> in the database.
+  </small>
+</p>
 <ul>
   <li>name: <em>string</em></li>
   <li>description: <em>text</em></li>
@@ -33,6 +43,11 @@
 </ul>
 
 <h4>Product</h4>
+<p>
+  <small>
+    Currently <%= pluralize(@products_count, 'record') %> in the database.
+  </small>
+</p>
 <ul>
   <li>name: <em>string</em></li>
   <li>description: <em>text</em></li>

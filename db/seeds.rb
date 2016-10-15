@@ -33,6 +33,7 @@ end
 end
 
 # Seed Categories
+puts
 (1..10).each do |i|
   name = Faker::Commerce.department
   while(!unique_fake?(name, Category, :name))
@@ -46,4 +47,24 @@ end
   category.save!
 
   puts "#{i} categories created..." if i % 2 == 0
+end
+
+# Seed Products
+puts
+categories_count = Category.count
+(1..100).each do |i|
+  name = Faker::Commerce.product_name
+  while(!unique_fake?(name, Category, :name))
+    name = Faker::Commerce.product_name
+  end
+
+  product = Product.new(
+    name: name,
+    description: Faker::Lorem.sentence,
+    price: Faker::Commerce.price,
+    category_id: Random.rand(categories_count) + 1
+  )
+  product.save!
+
+  puts "#{i} products created..." if i % 10 == 0
 end

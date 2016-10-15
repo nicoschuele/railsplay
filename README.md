@@ -12,6 +12,8 @@ RailsPlay is a simple Rails app containing a few models, views and seed data. Th
 2. Install the necessary gems: `bundle install`
 3. Run the DB migrations: `rails db:migrate`
 4. Optionally, add initial data to the app: `rails db:seed`
+5. Launch your Rails server: `rails s`
+6. Run the app in your browser by visiting `http://localhost:3000`
 
 ## Contributing
 

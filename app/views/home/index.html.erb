@@ -1,0 +1,45 @@
+<h1>RailsPlay</h1>
+<p>
+  <em>RailsPlay</em> is a basic <%= link_to "Ruby on Rails", "http://rubyonrails.org" %> playground. For more info, visit <%= link_to "RailsPlay on Github", "https://github.com/nicoschuele/railsplay" %>.
+</p>
+
+<hr/>
+
+<h2>Models</h2>
+
+<h3>&gt; Single model</h3>
+
+<h4>Company</h4>
+<ul>
+  <li>name: <em>string</em></li>
+  <li>slogan: <em>string</em></li>
+  <li>mission_statement: <em>string</em></li>
+  <li>street: <em>string</em></li>
+  <li>zip_code: <em>string</em></li>
+  <li>city: <em>string</em></li>
+  <li>country: <em>string</em></li>
+  <li>revenue: <em>decimal</em></li>
+  <li>created_at: <em>datetime</em></li>
+  <li>updated_at: <em>datetime</em></li>
+</ul>
+
+<h3>&gt; Two models with a one-to-many relationship</h3>
+<h4>Category</h4>
+<ul>
+  <li>name: <em>string</em></li>
+  <li>description: <em>text</em></li>
+  <li>created_at: <em>datetime</em></li>
+  <li>updated_at: <em>datetime</em></li>
+</ul>
+
+<h4>Product</h4>
+<ul>
+  <li>name: <em>string</em></li>
+  <li>description: <em>text</em></li>
+  <li>price: <em>decimal</em></li>
+  <li>category_id: <em>integer</em></li>
+  <li>created_at: <em>datetime</em></li>
+  <li>updated_at: <em>datetime</em></li>
+</ul>
+
+<hr/>

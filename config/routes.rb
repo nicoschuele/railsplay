@@ -1,15 +1,23 @@
 # == Route Map
 #
-#       Prefix Verb   URI Pattern                   Controller#Action
-#         root GET    /                             home#index
-#    companies GET    /companies(.:format)          companies#index
-#              POST   /companies(.:format)          companies#create
-#  new_company GET    /companies/new(.:format)      companies#new
-# edit_company GET    /companies/:id/edit(.:format) companies#edit
-#      company GET    /companies/:id(.:format)      companies#show
-#              PATCH  /companies/:id(.:format)      companies#update
-#              PUT    /companies/:id(.:format)      companies#update
-#              DELETE /companies/:id(.:format)      companies#destroy
+#        Prefix Verb   URI Pattern                    Controller#Action
+#          root GET    /                              home#index
+#     companies GET    /companies(.:format)           companies#index
+#               POST   /companies(.:format)           companies#create
+#   new_company GET    /companies/new(.:format)       companies#new
+#  edit_company GET    /companies/:id/edit(.:format)  companies#edit
+#       company GET    /companies/:id(.:format)       companies#show
+#               PATCH  /companies/:id(.:format)       companies#update
+#               PUT    /companies/:id(.:format)       companies#update
+#               DELETE /companies/:id(.:format)       companies#destroy
+#    categories GET    /categories(.:format)          categories#index
+#               POST   /categories(.:format)          categories#create
+#  new_category GET    /categories/new(.:format)      categories#new
+# edit_category GET    /categories/:id/edit(.:format) categories#edit
+#      category GET    /categories/:id(.:format)      categories#show
+#               PATCH  /categories/:id(.:format)      categories#update
+#               PUT    /categories/:id(.:format)      categories#update
+#               DELETE /categories/:id(.:format)      categories#destroy
 #
 
 Rails.application.routes.draw do
@@ -18,4 +26,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :companies
+  resources :categories
 end

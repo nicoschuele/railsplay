@@ -17,4 +17,5 @@
 
 class Company < ApplicationRecord
   validates :name, presence: true
+  validates :revenue, numericality: true
 end

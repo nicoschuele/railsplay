@@ -17,7 +17,7 @@ end
     name = Faker::Company.name
   end
 
-  c = Company.new(
+  company = Company.new(
     name: name,
     slogan: Faker::Company.catch_phrase,
     mission_statement: Faker::Company.bs,
@@ -27,7 +27,23 @@ end
     country: Faker::Address.country,
     revenue: Random.rand(100)
   )
-  c.save!
+  company.save!
 
   puts "#{i} companies created..." if i % 10 == 0
+end
+
+# Seed Categories
+(1..10).each do |i|
+  name = Faker::Commerce.department
+  while(!unique_fake?(name, Category, :name))
+    name = Faker::Commerce.department
+  end
+
+  category = Category.new(
+    name: name,
+    description: Faker::Hipster.sentence
+  )
+  category.save!
+
+  puts "#{i} categories created..." if i % 2 == 0
 end

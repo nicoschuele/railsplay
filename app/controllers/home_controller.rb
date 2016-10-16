@@ -12,6 +12,5 @@ class HomeController < ApplicationController
         @gemfile << line
       end
     end
-    render plain: @gemfile
   end
 end

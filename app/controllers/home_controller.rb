@@ -4,4 +4,14 @@ class HomeController < ApplicationController
     @categories_count = Category.count
     @products_count = Product.count
   end
+
+  def gemfile
+    @gemfile = ""
+    File.open("#{Rails.root}/Gemfile.lock", 'r') do |f|
+      f.each_line do |line|
+        @gemfile << line
+      end
+    end
+    render plain: @gemfile
+  end
 end

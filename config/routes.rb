@@ -33,6 +33,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get '/gemfile', to: 'home#gemfile', as: 'gemfile'
+
   resources :companies
   resources :categories
   resources :products
